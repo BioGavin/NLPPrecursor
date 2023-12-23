@@ -105,6 +105,20 @@ Cleavage predictions
 ```
 
 
+
+## Usage (from Wlab)
+
+```bash
+# 查看帮助信息
+./scripts/predict.py -h
+# 使用方法
+./scripts/predict.py -i input.faa -o1 class_predictions.json -o2 cleavage_predictions.json
+```
+
+
+
+
+
 ## Example training
 
 All training data to build the above models is available through this repo under `training_data`. Training
@@ -204,7 +218,6 @@ if __name__ == "__main__":
 	test(data_path, json_path)
 
 ```
-
 
 
 
