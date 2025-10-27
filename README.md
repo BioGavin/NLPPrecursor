@@ -115,7 +115,17 @@ Cleavage predictions
 ./scripts/predict.py -i input.faa -o1 class_predictions.json -o2 cleavage_predictions.json
 ```
 
+- Extract the prediction outputs to obtain the positive data in tsv and faa format.
 
+```bash
+./scripts/ex_deepripp.py -i1 class.json -i2 cleavage.json -s 0.8 -o deepripp_pos
+```
+
+- Extract multiple prediction outputs to generate a csv table with RiPP class information 
+
+```bash
+./ex_deepripp_class.py deepripp_output predict_res.csv
+```
 
 
 
